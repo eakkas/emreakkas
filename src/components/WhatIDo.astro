@@ -1,0 +1,57 @@
+---
+---
+
+<section id="what-i-do" class="py-24 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Label -->
+      <div>
+        <p class="text-sm font-medium text-blue-600 tracking-widest uppercase mb-4">What I Do</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          Supporting founders and entrepreneurs who are ready to take the next step.
+        </h2>
+      </div>
+
+      <!-- Content -->
+      <div class="space-y-6 text-gray-600 leading-relaxed">
+        <p>
+          My approach isn't about giving you answers — it's about asking the right questions.
+          I believe the best outcomes happen when founders discover their own path with the
+          right guidance alongside them.
+        </p>
+        <p>
+          Whether you're launching a new business, transforming a hobby into a thriving
+          passion project, or pursuing a bold creative endeavour, I bring decades of
+          real-world experience to help you move forward with clarity and confidence.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="mt-16 grid sm:grid-cols-3 gap-6">
+      {[
+        {
+          icon: '🚀',
+          title: 'Business Launch',
+          desc: 'From idea validation to market entry — building the foundation for a business that lasts.',
+        },
+        {
+          icon: '🔥',
+          title: 'Passion Projects',
+          desc: 'Turning hobbies and side projects into real ventures with sustainable momentum.',
+        },
+        {
+          icon: '🎨',
+          title: 'Creative Pursuits',
+          desc: 'Supporting bold creative visions with strategic thinking and entrepreneurial discipline.',
+        },
+      ].map((card) => (
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">{card.icon}</div>
+          <h3 class="font-semibold text-gray-900 mb-2">{card.title}</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">{card.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,73 @@
+---
+---
+
+<section id="who-i-am" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Label -->
+      <div>
+        <p class="text-sm font-medium text-blue-600 tracking-widest uppercase mb-4">Who I Am</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          Builder, operator, and investor — with the scars to prove it.
+        </h2>
+        <p class="mt-6 text-gray-600 leading-relaxed">
+          I've been in the trenches. I've built companies from scratch, scaled teams,
+          navigated exits, and started over again. Everything I share comes from lived
+          experience, not theory.
+        </p>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Outside of business, I'm a kitesurfer and proud father of two daughters.
+          You'll find me on the water or chasing the next wind window somewhere around the globe.
+        </p>
+      </div>
+
+      <!-- Achievements -->
+      <div class="space-y-6">
+        {[
+          {
+            stat: '75+',
+            label: 'Team Members',
+            desc: 'Founded and scaled a language services company to over 75 employees.',
+          },
+          {
+            stat: 'Top 100',
+            label: 'BC Tech Companies',
+            desc: 'Ranked among the top 100 technology companies in British Columbia.',
+          },
+          {
+            stat: 'PE Exit',
+            label: 'Successful Acquisition',
+            desc: 'Led the company through a successful private equity acquisition.',
+          },
+          {
+            stat: '40% YoY',
+            label: 'Growth',
+            desc: 'Launched an equipment rental business achieving 40% year-over-year growth.',
+          },
+        ].map((item) => (
+          <div class="flex gap-5 items-start">
+            <div class="flex-shrink-0 w-20 text-right">
+              <span class="text-2xl font-bold text-gray-900">{item.stat}</span>
+            </div>
+            <div class="border-l border-gray-200 pl-5">
+              <p class="font-semibold text-gray-900 text-sm">{item.label}</p>
+              <p class="text-sm text-gray-500 mt-1 leading-relaxed">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+
+        <div class="flex gap-5 items-start">
+          <div class="flex-shrink-0 w-20 text-right">
+            <span class="text-2xl">📋</span>
+          </div>
+          <div class="border-l border-gray-200 pl-5">
+            <p class="font-semibold text-gray-900 text-sm">Board Member & Angel Investor</p>
+            <p class="text-sm text-gray-500 mt-1 leading-relaxed">
+              Active board member and angel investor for multiple startups across industries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
