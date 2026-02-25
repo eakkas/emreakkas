@@ -9,7 +9,7 @@ const locations = [
 
 <section class="py-24 bg-gray-50">
   <div class="max-w-5xl mx-auto px-6 text-center">
-    <p class="text-sm font-medium text-blue-600 tracking-widest uppercase mb-4">Location</p>
+    <p class="text-sm font-medium text-teal-600 tracking-widest uppercase mb-4">Location</p>
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
       The globe is my playground.
     </h2>
@@ -20,7 +20,7 @@ const locations = [
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {locations.map((loc) => (
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-teal-100 hover:shadow-md hover:border-teal-200 transition-all">
           <div class="text-4xl mb-3">{loc.flag}</div>
           <h3 class="font-semibold text-gray-900">{loc.city}</h3>
           <p class="text-sm text-gray-500 mt-1">{loc.country}</p>
